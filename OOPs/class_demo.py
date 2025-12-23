@@ -2,7 +2,7 @@
 class & object
 methods, modules, packages
 polymorphism - method overriding, method overloading
-Inheritance - single, multiple, multi-level, hirarchy
+Inheritance - single, multiple, multi-level, hierarchy, hybrid`
 abstraction
 decorator, generators
 error handling try and except , finally, else, file handling
@@ -22,6 +22,7 @@ class Student:
 
 s1 = Student
 print(s1)
+s1.display('siva',35,'Python')
 
 
 
