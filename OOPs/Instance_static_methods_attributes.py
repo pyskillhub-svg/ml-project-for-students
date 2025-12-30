@@ -87,24 +87,42 @@ constructor will be called at the time of object creation itself.
 '''
 
 
+# class Student:
+#
+#     def __init__(self,name,id,mobile):
+#         self.name = name
+#         self.id = id
+#         self.mobile = mobile
+#         print("Good morning to all!")
+#
+#
+#
+#     def student_info(self):
+#         print("How are you!")
+#         print(f"student name is {self.name}, id is {self.id} and mobile no is {self.mobile}")
+# mystudent = Student('Neel','000034',12345)
+# mystudent.student_info()
+# mystudent1 = Student('Ronald','000045',123231)
+# mystudent1.student_info()
+
+
+
 class Student:
-
-    def __init__(self,name,id,mobile):
+    college = "ABC"
+    def student_inf(self,name,new_college):
+        self.college = new_college
         self.name = name
-        self.id = id
-        self.mobile = mobile
-        print("Good morning to all!")
+        print(f"good morning{self.name} and college is {self.college}")
 
+s1 = Student()
+s1.student_inf('siva',new_college='XYZ')
+s2 = Student()
+s2.student_inf('Neel','XYZ')
+s2.new_college = 'XYZ'
 
-
-    def student_info(self):
-        print("How are you!")
-        print(f"student name is {self.name}, id is {self.id} and mobile no is {self.mobile}")
-mystudent = Student('Neel','000034',12345)
-mystudent.student_info()
-mystudent1 = Student('Ronald','000045',123231)
-mystudent1.student_info()
-
+s1.age = 25
+print(s1.__dict__)
+print(s2.__dict__)
 
 
 
