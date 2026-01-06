@@ -24,7 +24,7 @@ morphism means forms
 # print(len(s1))
 # print(len(l1))
 
-# Class level polymorphism
+# Class level polymorphism or duck typing polymorphism
 # class Car:
 #     def move(self):
 #         print("drive!")
